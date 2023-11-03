@@ -1,6 +1,6 @@
 import json
 
-def get_data(filename:str) -> dict:
+def get(filename:str) -> dict:
     """
     You are given a filename. Read the JSON data from the file and return the dictionary.
 
@@ -9,3 +9,5 @@ def get_data(filename:str) -> dict:
     Returns:
         dict: JSON data
     """
+    f = open("randomuser_data.json").read()
+    return json.loads(f)
